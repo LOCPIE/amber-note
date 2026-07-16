@@ -1,0 +1,6 @@
+{
+  "name": "Amber Note",
+  "description": "Amber Note is an AI Recording Device designed for enterprises, fully integrated with the Base.vn ecosystem to transform conversations into actions, tasks, and business intelligence instantly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

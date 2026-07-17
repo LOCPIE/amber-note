@@ -67,14 +67,44 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handlePreOrderSubmit = (e: FormEvent) => {
+  const handlePreOrderSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitted(true);
+    try {
+      await fetch('https://n8n.operation.basesystem.dev/webhook/33383510-aa8d-4c7a-8c52-acba9df6d8d8', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formType: 'pre_order',
+          ...formData,
+          timestamp: new Date().toISOString()
+        }),
+      });
+    } catch (err) {
+      console.error('Webhook submission error:', err);
+    }
   };
 
-  const handleConsultSubmit = (e: FormEvent) => {
+  const handleConsultSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsConsultSubmitted(true);
+    try {
+      await fetch('https://n8n.operation.basesystem.dev/webhook/33383510-aa8d-4c7a-8c52-acba9df6d8d8', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formType: 'consultation',
+          ...consultData,
+          timestamp: new Date().toISOString()
+        }),
+      });
+    } catch (err) {
+      console.error('Webhook submission error:', err);
+    }
   };
 
   const resetPreOrder = () => {
@@ -187,7 +217,7 @@ export default function App() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-xl sm:text-2xl font-medium tracking-tight text-gray-600 font-display"
               >
-                Record once. Everything else happens automatically.
+                Mọi cuộc trò chuyện đều có giá trị. Đừng để chúng bị lãng quên.
               </motion.p>
             </div>
 
@@ -197,7 +227,7 @@ export default function App() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-sm sm:text-base text-gray-500 leading-relaxed max-w-xl"
             >
-              Không chỉ ghi âm, không chỉ bóc băng. Amber Note chuyển đổi trực tiếp mọi lời thảo luận trong cuộc họp thành công việc được gán, dữ liệu được đồng bộ và tri thức được bảo mật trong doanh nghiệp ngay lập tức.
+              Amber Note giúp doanh nghiệp ghi nhận mọi cuộc họp, cuộc gọi và trao đổi quan trọng, biến chúng thành dữ liệu nghiệp vụ có cấu trúc và tự động tạo hành động trực tiếp trên hệ sinh thái của Base.
             </motion.p>
 
             {/* CTAs */}
@@ -292,7 +322,7 @@ export default function App() {
             
             {/* Left Column: Headline and actions */}
             <div className="lg:col-span-5 space-y-6">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100 inline-block">
+              <span className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100 inline-block">
                 Khởi tạo tương lai vận hành
               </span>
               <h2 className="text-3xl sm:text-5xl font-display font-medium tracking-tight text-gray-900 leading-tight">

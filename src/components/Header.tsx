@@ -42,37 +42,31 @@ export default function Header({ onPreOrderClick, onContactClick }: HeaderProps)
         <nav className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection('difference-section')}
-            className="text-xs font-medium text-gray-600 hover:text-black transition-colors"
+            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
             Tính năng
           </button>
           <button
-            onClick={() => scrollToSection('trusted-enterprises')}
-            className="text-xs font-medium text-gray-600 hover:text-black transition-colors"
-          >
-            Đối tác
-          </button>
-          <button
             onClick={() => scrollToSection('flow-section')}
-            className="text-xs font-medium text-gray-600 hover:text-black transition-colors"
+            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
             Luồng Hoạt Động
           </button>
           <button
             onClick={() => scrollToSection('compare-section')}
-            className="text-xs font-medium text-gray-600 hover:text-black transition-colors"
+            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
             So Sánh
           </button>
           <button
             onClick={() => scrollToSection('demo-playground')}
-            className="text-xs font-medium text-gray-600 hover:text-black transition-colors"
+            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
             Trải nghiệm AI
           </button>
           <button
             onClick={() => scrollToSection('specs-section')}
-            className="text-xs font-medium text-gray-600 hover:text-black transition-colors"
+            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
             Thông Số
           </button>

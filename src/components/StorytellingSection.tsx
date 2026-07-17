@@ -121,7 +121,7 @@ export default function StorytellingSection() {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-blue-600 mb-3"
+            className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-blue-600 mb-3"
           >
             Từ cuộc họp... đến hành động
           </motion.p>

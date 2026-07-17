@@ -25,7 +25,7 @@ export default function SpecsSection() {
         
         {/* Title Block */}
         <div className="text-center mb-16 sm:mb-20">
-          <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+          <span className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
             Thông Số Kỹ Thuật
           </span>
           <h2 className="text-3xl sm:text-5xl font-display font-medium tracking-tight text-gray-900 mt-4">

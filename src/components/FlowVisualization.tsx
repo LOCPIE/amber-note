@@ -248,19 +248,7 @@ export default function FlowVisualization() {
 
         </div>
 
-        {/* Highlight Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="max-w-xl mx-auto bg-neutral-900/80 border border-white/5 rounded-2xl p-6 text-center mt-12 backdrop-blur-md"
-        >
-          <span className="text-xs font-mono text-gray-500 block mb-2">Đồng bộ tức thời không giới hạn</span>
-          <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-            Kết nối trực tiếp Wi-Fi & Bluetooth, tự động mã hóa AES-256 rồi tải lên đám mây an toàn của Base Cloud. Không cần ứng dụng bên thứ ba, không bị rò rỉ dữ liệu.
-          </p>
-        </motion.div>
+
 
       </div>
     </section>

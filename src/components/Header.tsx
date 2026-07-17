@@ -78,13 +78,13 @@ export default function Header({ onPreOrderClick, onContactClick }: HeaderProps)
             href="https://base.vn/dang-ky-demo?utm_source=ambernote-hearder"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full border border-gray-200 text-xs font-medium text-gray-700 hover:bg-gray-50 active:scale-98 transition-all"
+            className="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full border border-gray-200 text-[13px] font-medium text-gray-700 hover:bg-gray-50 active:scale-98 transition-all"
           >
             Tư vấn doanh nghiệp
           </a>
           <button
             onClick={onPreOrderClick}
-            className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black text-white text-xs font-medium hover:bg-neutral-800 active:scale-98 shadow-sm transition-all gap-1.5"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black text-white text-[13px] font-medium hover:bg-neutral-800 active:scale-98 shadow-sm transition-all gap-1.5"
           >
             Đặt trước
             <ArrowRight className="w-3.5 h-3.5" />

@@ -64,10 +64,10 @@ export default function FlowVisualization() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-amber-led font-mono font-bold uppercase mb-4"
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-amber-led font-sans font-semibold uppercase mb-4 tracking-wider"
           >
             <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-            Vũ Trụ Đồng Bộ Dữ Liệu
+            Đồng Bộ Dữ Liệu
           </motion.div>
           <h2 className="text-4xl sm:text-6xl font-display font-medium tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
             Hệ sinh thái thông minh

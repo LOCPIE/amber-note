@@ -152,7 +152,7 @@ export default function StorytellingSection() {
           <div className="lg:col-span-5 space-y-3 relative z-10">
             {/* Play/Pause Control */}
             <div className="flex justify-between items-center pb-2 border-b border-gray-200/60 mb-4">
-              <span className="text-xs font-mono text-gray-500">Quy trình vận hành thông minh</span>
+              <span className="text-xs font-sans font-medium text-gray-500">Quy trình vận hành thông minh</span>
               <button
                 onClick={() => setIsPlaying(!isPlaying)}
                 className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 active:scale-95 transition-all shadow-sm"
@@ -201,7 +201,7 @@ export default function StorytellingSection() {
                       />
                     )}
 
-                    <div className="text-[10px] font-mono text-gray-400 w-6 font-bold">
+                    <div className="text-[10px] font-sans text-gray-400 w-6 font-bold">
                       {step.id.toString().padStart(2, '0')}
                     </div>
 
@@ -221,7 +221,7 @@ export default function StorytellingSection() {
                           {step.label}
                         </span>
                         {step.baseApp && (
-                          <span className="text-[9px] px-1.5 py-0.5 rounded bg-blue-50 border border-blue-100 text-blue-600 font-medium font-mono uppercase">
+                          <span className="text-[9px] px-1.5 py-0.5 rounded bg-blue-50 border border-blue-100 text-blue-600 font-semibold font-sans uppercase">
                             {step.baseApp}
                           </span>
                         )}
@@ -255,7 +255,7 @@ export default function StorytellingSection() {
                 {/* Top header block */}
                 <div className="flex justify-between items-start z-10">
                   <div>
-                    <span className="text-[10px] font-mono font-bold uppercase text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">
+                    <span className="text-[10px] font-sans font-bold uppercase text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100 tracking-wider">
                       Step {activeData.id} • {activeData.subLabel}
                     </span>
                     <h3 className="text-2xl sm:text-4xl font-display font-medium text-gray-900 mt-4 tracking-tight">

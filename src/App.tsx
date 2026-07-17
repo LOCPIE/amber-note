@@ -16,7 +16,6 @@ import {
 } from 'lucide-react';
 
 import Header from './components/Header';
-import DeviceModel from './components/DeviceModel';
 import StorytellingSection from './components/StorytellingSection';
 import FlowVisualization from './components/FlowVisualization';
 import WhyAmberNote from './components/WhyAmberNote';
@@ -30,6 +29,8 @@ import { ProductColor } from './types';
 // Fetch our beautifully generated images as URLs
 const spaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/base-amber-note-gray.jpeg';
 const blossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/base-amber-note-pink.jpeg';
+const heroSpaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/May-doc-AI-02.png';
+const heroBlossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/May-doc-AI-04.png';
 
 export default function App() {
   const [activeColor, setActiveColor] = useState<ProductColor>('space-gray');
@@ -280,14 +281,60 @@ export default function App() {
           </div>
 
           {/* Right Product Model Showcase */}
-          <div className="lg:col-span-6 flex items-center justify-center">
+          <div className="lg:col-span-6 flex flex-col items-center justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 15 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full"
+              className="w-full flex justify-center"
             >
-              <DeviceModel color={activeColor} onChangeColor={setActiveColor} />
+              <div className="relative w-full max-w-[420px] aspect-[4/5] flex flex-col items-center justify-center p-4">
+                {/* Colored background glow */}
+                <div className={`absolute inset-0 w-72 h-72 rounded-full filter blur-[80px] pointer-events-none transition-all duration-700 opacity-25 ${
+                  activeColor === 'blossom-pink' ? 'bg-pink-500/35' : 'bg-gray-500/30'
+                }`} />
+
+                {/* Product Photo Container with floating motion */}
+                <motion.div 
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                  className="relative w-72 h-[340px] flex items-center justify-center"
+                >
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={activeColor}
+                      src={activeColor === 'blossom-pink' ? heroBlossomPinkImg : heroSpaceGrayImg}
+                      alt={`Amber Note ${activeColor === 'blossom-pink' ? 'Blossom Pink' : 'Space Gray'}`}
+                      referrerPolicy="no-referrer"
+                      initial={{ opacity: 0, scale: 0.92, y: 10 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.92, y: -10 }}
+                      transition={{ duration: 0.4 }}
+                      className="max-w-full max-h-full object-contain filter drop-shadow-[0_25px_35px_rgba(0,0,0,0.18)]"
+                    />
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Color selector */}
+                <div className="bg-gray-100/80 backdrop-blur-md p-1 rounded-full flex gap-1 border border-gray-200 mt-6 z-10">
+                  <button
+                    onClick={() => setActiveColor('space-gray')}
+                    className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all ${
+                      activeColor === 'space-gray' ? 'bg-black text-white shadow-sm' : 'text-gray-500 hover:text-black'
+                    }`}
+                  >
+                    Space Gray
+                  </button>
+                  <button
+                    onClick={() => setActiveColor('blossom-pink')}
+                    className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all ${
+                      activeColor === 'blossom-pink' ? 'bg-white text-gray-900 shadow-sm border border-pink-100' : 'text-gray-500 hover:text-black'
+                    }`}
+                  >
+                    Blossom Pink
+                  </button>
+                </div>
+              </div>
             </motion.div>
           </div>
 

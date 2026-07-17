@@ -29,8 +29,8 @@ import { ProductColor } from './types';
 // Fetch our beautifully generated images as URLs
 const spaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/base-amber-note-gray.jpeg';
 const blossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/base-amber-note-pink.jpeg';
-const heroSpaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/May-doc-AI-02.png';
-const heroBlossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/May-doc-AI-04.png';
+const heroSpaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/Base-Amber-Note-Full-Gray.png';
+const heroBlossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/Base-Amber-Note-Full-Pink.png';
 
 export default function App() {
   const [activeColor, setActiveColor] = useState<ProductColor>('space-gray');

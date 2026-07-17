@@ -133,7 +133,7 @@ export default function TrustedEnterprises() {
             
             <div className="flex items-center gap-2 text-blue-600">
               <Quote className="w-8 h-8 opacity-20 fill-current shrink-0" />
-              <span className="text-xs font-mono font-bold uppercase tracking-wider">Ý kiến chuyên gia đầu ngành</span>
+              <span className="text-xs font-sans font-bold uppercase tracking-wider">Ý kiến chuyên gia đầu ngành</span>
             </div>
 
             {/* Quote Animation Container */}
@@ -199,7 +199,7 @@ export default function TrustedEnterprises() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-1.5 text-blue-400">
                     <Sparkles className="w-4 h-4 text-blue-400 animate-pulse" />
-                    <span className="text-[10px] font-mono uppercase tracking-wider font-bold">Hiệu suất vận hành thực tế</span>
+                    <span className="text-[10px] font-sans uppercase tracking-wider font-bold">Hiệu suất vận hành thực tế</span>
                   </div>
                   <h3 className="text-3xl font-display font-medium text-white">{activeTestimony.company}</h3>
                 </div>

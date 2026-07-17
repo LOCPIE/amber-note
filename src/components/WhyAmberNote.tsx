@@ -41,7 +41,7 @@ export default function WhyAmberNote() {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl font-display font-medium tracking-tight text-gray-900"
           >
-            Thiết kế riêng cho hệ điều hành Base.vn
+            Amber không chỉ lắng nghe. Amber hiểu doanh nghiệp.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

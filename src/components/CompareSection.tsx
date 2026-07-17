@@ -33,13 +33,13 @@ export default function CompareSection() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-100">
-                  <th className="p-6 text-xs font-mono font-bold uppercase text-gray-400 tracking-wider">
+                  <th className="p-6 text-xs font-sans font-bold uppercase text-gray-400 tracking-wider">
                     Tính năng
                   </th>
-                  <th className="p-6 text-center text-xs font-mono font-bold uppercase text-gray-500 tracking-wider">
+                  <th className="p-6 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
                     Máy ghi âm thường
                   </th>
-                  <th className="p-6 text-center text-xs font-mono font-bold uppercase text-blue-600 tracking-wider bg-blue-50/40 relative">
+                  <th className="p-6 text-center text-xs font-sans font-bold uppercase text-blue-600 tracking-wider bg-blue-50/40 relative">
                     <div className="flex items-center justify-center gap-1">
                       <Sparkles className="w-3.5 h-3.5 fill-current animate-pulse text-blue-600" />
                       <span>Amber Note AI</span>

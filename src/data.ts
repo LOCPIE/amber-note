@@ -167,7 +167,7 @@ export const DEMO_PRESETS: DemoPreset[] = [
 export const WHY_CARDS: WhyCard[] = [
   {
     title: 'Native với Base.vn',
-    description: 'Không cần copy. Không cần upload. Không cần thao tác thủ công. Mọi file ghi âm được liên kết trực tiếp tới Account và Workspace của bạn.',
+    description: 'Sinh ra để hoạt động bên trong hệ sinh thái Base. Không cần tải lên. Không cần nhập liệu lại.',
     iconName: 'Cpu'
   },
   {
@@ -237,9 +237,9 @@ export const SPEC_ITEMS: SpecItem[] = [
 ];
 
 export const COMPARE_DATA = [
-  { feature: 'Record (Ghi âm chất lượng cao)', normal: true, amber: true },
-  { feature: 'AI Transcript (Bóc băng văn bản)', normal: false, amber: true },
-  { feature: 'AI Summary (Tự động tóm tắt cuộc họp)', normal: false, amber: true },
+  { feature: 'Ghi âm chất lượng cao', normal: true, amber: true },
+  { feature: 'Chuyển lời nói thành văn bản', normal: false, amber: true },
+  { feature: 'Tự động tóm tắt cuộc họp', normal: false, amber: true },
   { feature: 'CRM Sync (Tự cập nhật cơ hội bán hàng)', normal: false, amber: true },
   { feature: 'Meeting Sync (Đồng bộ lịch & biên bản)', normal: false, amber: true },
   { feature: 'Auto Task (Tự bóc tách & giao việc)', normal: false, amber: true },

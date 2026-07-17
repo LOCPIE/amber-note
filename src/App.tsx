@@ -288,9 +288,9 @@ export default function App() {
               transition={{ delay: 0.4, duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="w-full flex justify-center"
             >
-              <div className="relative w-full max-w-[420px] aspect-[4/5] flex flex-col items-center justify-center p-4">
+              <div className="relative w-full max-w-[520px] aspect-[4/5] flex flex-col items-center justify-center p-4">
                 {/* Colored background glow */}
-                <div className={`absolute inset-0 w-72 h-72 rounded-full filter blur-[80px] pointer-events-none transition-all duration-700 opacity-25 ${
+                <div className={`absolute inset-0 w-80 h-80 sm:w-96 sm:h-96 rounded-full filter blur-[80px] pointer-events-none transition-all duration-700 opacity-25 ${
                   activeColor === 'blossom-pink' ? 'bg-pink-500/35' : 'bg-gray-500/30'
                 }`} />
 
@@ -298,7 +298,7 @@ export default function App() {
                 <motion.div 
                   animate={{ y: [0, -8, 0] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  className="relative w-72 h-[340px] flex items-center justify-center"
+                  className="relative w-[300px] sm:w-[440px] h-[360px] sm:h-[480px] flex items-center justify-center"
                 >
                   <AnimatePresence mode="wait">
                     <motion.img

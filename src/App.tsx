@@ -28,8 +28,8 @@ import Footer from './components/Footer';
 import { ProductColor } from './types';
 
 // Fetch our beautifully generated images as URLs
-const spaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/amber-note-gray.jpeg';
-const blossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/amber-note-pink.jpeg';
+const spaceGrayImg = 'https://base.vn/wp-content/uploads/2026/07/base-amber-note-gray.jpeg';
+const blossomPinkImg = 'https://base.vn/wp-content/uploads/2026/07/base-amber-note-pink.jpeg';
 
 export default function App() {
   const [activeColor, setActiveColor] = useState<ProductColor>('space-gray');

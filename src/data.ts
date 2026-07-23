@@ -131,31 +131,31 @@ export const DEMO_PRESETS: DemoPreset[] = [
     duration: '02:20',
     category: 'Nội bộ',
     transcript: [
-      { speaker: 'Sếp Minh (CEO)', text: 'Chào cả team. Chiến dịch ra mắt sản phẩm mới vào tháng sau rất quan trọng. Tôi muốn chốt kế hoạch Marketing và chuẩn bị hệ thống hạ tầng server sẵn sàng cho lượng truy cập lớn.', time: '0:12' },
-      { speaker: 'Khánh Linh (Marketing Manager)', text: 'Dạ thưa sếp, kế hoạch Marketing tổng thể đã hoàn thiện 90%. Em sẽ gửi bản kế hoạch chi tiết ngân sách trước ngày 17/07 để sếp duyệt ạ.', time: '0:40' },
-      { speaker: 'Tuấn Kiệt (IT Director)', text: 'Về phần hạ tầng, em sẽ cho tối ưu và nâng cấp tải server lên gấp 3 lần bình thường, hoàn thành kiểm thử chịu tải (Load test) trước ngày 19/07 ạ.', time: '1:15' },
-      { speaker: 'Sếp Minh (CEO)', text: 'Tốt lắm. Linh hoàn thành Marketing Plan gửi tôi duyệt, Kiệt chịu trách nhiệm Load test server. Họp xong hệ thống Amber Note tự bóc tách và giao việc trực tiếp cho hai bạn luôn nhé.', time: '1:48' },
-      { speaker: 'Khánh Linh (Marketing Manager)', text: 'Dạ vâng sếp, tụi em sẽ triển khai ngay lập tức.', time: '2:10' }
+      { speaker: 'Sếp Hùng (CEO)', text: 'Chào cả team. Chiến dịch ra mắt sản phẩm mới vào tháng sau rất quan trọng. Tôi muốn chốt kế hoạch Marketing và chuẩn bị hệ thống hạ tầng server sẵn sàng cho lượng truy cập lớn.', time: '0:12' },
+      { speaker: 'Hà Phùng (CMO)', text: 'Dạ thưa sếp, kế hoạch Marketing tổng thể đã hoàn thiện 90%. Em sẽ gửi bản kế hoạch chi tiết ngân sách trước ngày 17/07 để sếp duyệt ạ.', time: '0:40' },
+      { speaker: 'Hardy (CTO)', text: 'Về phần hạ tầng, em sẽ cho tối ưu và nâng cấp tải server lên gấp 3 lần bình thường, hoàn thành kiểm thử chịu tải (Load test) trước ngày 19/07 ạ.', time: '1:15' },
+      { speaker: 'Sếp Hùng (CEO)', text: 'Tốt lắm. Hà hoàn thành Marketing Plan gửi tôi duyệt, Hardy chịu trách nhiệm Load test server. Họp xong hệ thống Amber Note tự bóc tách và giao việc trực tiếp cho hai bạn luôn nhé.', time: '1:48' },
+      { speaker: 'Hà Phùng (CMO)', text: 'Dạ vâng sếp, tụi em sẽ triển khai ngay lập tức.', time: '2:10' }
     ],
     summary: {
-      overview: 'Buổi họp thống nhất kế hoạch ra mắt sản phẩm mới của CEO Minh cùng Ban điều hành. Thống nhất các mốc deadline quan trọng về kế hoạch Marketing và nâng cấp, kiểm thử tải hạ tầng máy chủ.',
+      overview: 'Buổi họp thống nhất kế hoạch ra mắt sản phẩm mới của CEO Hùng cùng Ban điều hành. Thống nhất các mốc deadline quan trọng về kế hoạch Marketing và nâng cấp, kiểm thử tải hạ tầng máy chủ.',
       keyPoints: [
         'Chiến dịch ra mắt sản phẩm mới là trọng tâm hàng đầu của tháng tới.',
-        'Khánh Linh hoàn thiện và gửi duyệt kế hoạch chi tiết ngân sách Marketing trước 17/07.',
-        'Tuấn Kiệt hoàn tất nâng cấp và kiểm thử chịu tải (Load test) hạ tầng server trước 19/07.'
+        'Hà Phùng hoàn thiện và gửi duyệt kế hoạch chi tiết ngân sách Marketing trước 17/07.',
+        'Hardy hoàn tất nâng cấp và kiểm thử chịu tải (Load test) hạ tầng server trước 19/07.'
       ]
     },
     tasks: [
       {
         title: 'Hoàn thiện và gửi duyệt kế hoạch ngân sách Marketing',
-        assignee: 'Khánh Linh (Marketing)',
+        assignee: 'Hà Phùng (CMO)',
         deadline: '17/07/2026',
         status: 'In Progress',
         baseApp: 'Base Workflow'
       },
       {
         title: 'Thực hiện nâng cấp tải hạ tầng & Load test server',
-        assignee: 'Tuấn Kiệt (IT)',
+        assignee: 'Hardy (CTO)',
         deadline: '19/07/2026',
         status: 'In Progress',
         baseApp: 'Base Workflow'

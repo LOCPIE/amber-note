@@ -200,39 +200,39 @@ export const WHY_CARDS: WhyCard[] = [
 export const SPEC_ITEMS: SpecItem[] = [
   {
     iconName: 'Mic',
-    label: 'AI Recording System',
-    value: '4 micro AI',
-    desc: 'Mảng 4 micro AI độ nhạy cao, thu âm khoảng cách xa lên đến 8 mét rõ nét.'
-  },
-  {
-    iconName: 'Activity',
-    label: 'Noise Reduction',
-    value: 'Dual-Core ANC Engine',
-    desc: 'Chủ động triệt tiêu tiếng ồn môi trường văn phòng, tạp âm bàn phím.'
-  },
-  {
-    iconName: 'Battery',
-    label: 'Battery Life',
-    value: '24 giờ liên tục',
-    desc: 'Thời lượng pin hoạt động liên tục vượt trội, sạc nhanh USB-C tiện lợi.'
+    label: 'Hệ thống ghi âm',
+    value: 'Hệ thống 4 Micro AI',
+    desc: 'Mảng 4 micro AI định hướng, thu rõ mọi giọng nói với độ chính xác cao trong phạm vi rộng.'
   },
   {
     iconName: 'Shield',
-    label: 'Enterprise Ready',
+    label: 'Bảo mật mã hóa',
     value: 'Thuật toán AES/Rijndael',
-    desc: 'Mã hóa dữ liệu từ phần cứng lên đám mây, an toàn tuyệt đối.'
+    desc: 'Mã hóa file ghi âm bằng chuẩn AES/Rijndael, đảm bảo an toàn dữ liệu mà vẫn giữ nguyên chất lượng âm thanh.'
   },
   {
     iconName: 'Cpu',
-    label: 'AI Processor',
-    value: 'Amber Neural-1 Chip',
-    desc: 'Xử lý giọng nói, nén file chất lượng cao và chuyển đổi offline thông minh.'
+    label: 'Bộ xử lý',
+    value: 'Chip H26 Max',
+    desc: 'Chip chuyên xử lý âm thanh, mã hóa tín hiệu số và tăng tốc AI trực tiếp trên thiết bị.'
   },
   {
     iconName: 'Zap',
-    label: 'Instant Sync',
-    value: 'Base Sync Protocol',
-    desc: 'Kết nối Wi-Fi 6 tốc độ cao, đồng bộ dữ liệu chỉ mất 3 giây ngay sau khi tắt ghi âm.'
+    label: 'Hệ thống sạc',
+    value: 'Sạc Magnetic Charging',
+    desc: 'Đế sạc từ tính 4 chân, kết nối chắc chắn, sạc nhanh và tiện lợi.'
+  },
+  {
+    iconName: 'Layers',
+    label: 'Chất liệu',
+    value: 'Vỏ Titan cao cấp',
+    desc: 'Chất liệu Titan bền bỉ, nhẹ và sang trọng, mang lại cảm giác cầm nắm chắc chắn.'
+  },
+  {
+    iconName: 'Battery',
+    label: 'Thời lượng pin',
+    value: '24 giờ liên tục',
+    desc: 'Ghi âm và hoạt động liên tục lên đến 24 giờ, sẵn sàng cho mọi cuộc họp dài.'
   }
 ];
 

@@ -5,7 +5,8 @@ import {
   Battery, 
   Shield, 
   Cpu, 
-  Zap
+  Zap,
+  Layers
 } from 'lucide-react';
 import { SPEC_ITEMS } from '../data';
 
@@ -15,7 +16,8 @@ const ICON_MAP: Record<string, any> = {
   Battery,
   Shield,
   Cpu,
-  Zap
+  Zap,
+  Layers
 };
 
 export default function SpecsSection() {

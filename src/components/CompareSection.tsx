@@ -33,16 +33,16 @@ export default function CompareSection() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-100">
-                  <th className="p-6 text-xs font-sans font-bold uppercase text-gray-400 tracking-wider">
+                  <th className="px-5 py-3.5 text-xs font-sans font-bold uppercase text-gray-400 tracking-wider">
                     Tính năng
                   </th>
-                  <th className="p-6 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
+                  <th className="px-5 py-3.5 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
                     Máy ghi âm thường
                   </th>
-                  <th className="p-6 text-center text-xs font-sans font-bold uppercase text-blue-600 tracking-wider bg-blue-50/40 relative">
+                  <th className="px-5 py-3.5 text-center text-xs font-sans font-bold uppercase text-blue-600 tracking-wider bg-blue-50/40 relative">
                     <div className="flex items-center justify-center gap-1">
                       <Sparkles className="w-3.5 h-3.5 fill-current animate-pulse text-blue-600" />
-                      <span>Amber Note AI</span>
+                      <span>Amber Note</span>
                     </div>
                   </th>
                 </tr>
@@ -51,33 +51,29 @@ export default function CompareSection() {
                 {COMPARE_DATA.map((row, idx) => (
                   <tr key={idx} className="hover:bg-gray-50/50 transition-colors">
                     {/* Feature Label */}
-                    <td className="p-5 text-xs sm:text-sm font-medium text-gray-900">
+                    <td className="px-5 py-2.5 text-xs sm:text-sm font-medium text-gray-900">
                       {row.feature}
                     </td>
 
                     {/* Normal Recorder Value */}
-                    <td className="p-5 text-center">
+                    <td className="px-5 py-2.5 text-center">
                       {row.normal ? (
-                        <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-50 text-emerald-600">
-                          <Check className="w-3.5 h-3.5 stroke-[3px]" />
+                        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-50 text-emerald-600">
+                          <Check className="w-3 h-3 stroke-[3px]" />
                         </div>
                       ) : (
-                        <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-red-50 text-red-400">
-                          <X className="w-3.5 h-3.5 stroke-[3px]" />
-                        </div>
+                        <span className="text-gray-300 font-bold text-sm leading-none">—</span>
                       )}
                     </td>
 
                     {/* Amber Note Value */}
-                    <td className="p-5 text-center bg-blue-50/10 relative">
+                    <td className="px-5 py-2.5 text-center bg-blue-50/10 relative">
                       {row.amber ? (
-                        <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 text-white shadow-sm shadow-blue-500/20">
-                          <Check className="w-3.5 h-3.5 stroke-[3px]" />
+                        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white shadow-sm shadow-blue-500/20">
+                          <Check className="w-3 h-3 stroke-[3px]" />
                         </div>
                       ) : (
-                        <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 text-gray-400">
-                          <X className="w-3.5 h-3.5 stroke-[3px]" />
-                        </div>
+                        <span className="text-gray-300 font-bold text-sm leading-none">—</span>
                       )}
                     </td>
                   </tr>

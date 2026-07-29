@@ -237,12 +237,14 @@ export const SPEC_ITEMS: SpecItem[] = [
 ];
 
 export const COMPARE_DATA = [
-  { feature: 'Ghi âm chất lượng cao', normal: true, amber: true },
-  { feature: 'Chuyển lời nói thành văn bản', normal: false, amber: true },
-  { feature: 'Tự động tóm tắt cuộc họp', normal: false, amber: true },
-  { feature: 'CRM Sync (Tự cập nhật cơ hội bán hàng)', normal: false, amber: true },
-  { feature: 'Meeting Sync (Đồng bộ lịch & biên bản)', normal: false, amber: true },
-  { feature: 'Auto Task (Tự bóc tách & giao việc)', normal: false, amber: true },
-  { feature: 'Base Wework integration (Tích hợp luồng công việc)', normal: false, amber: true },
-  { feature: 'Corporate Knowledge (Kho lưu trữ tri thức)', normal: false, amber: true }
+  { feature: 'Ghi âm', normal: true, amber: true },
+  { feature: 'AI Transcript', normal: false, amber: true },
+  { feature: 'AI Summary', normal: false, amber: true },
+  { feature: 'AI nhận diện công việc', normal: false, amber: true },
+  { feature: 'Tự động giao việc', normal: false, amber: true },
+  { feature: 'Đồng bộ Meeting', normal: false, amber: true },
+  { feature: 'Đồng bộ CRM/Deal', normal: false, amber: true },
+  { feature: 'AI chạy trực tiếp trên thiết bị', normal: false, amber: true },
+  { feature: 'Mã hóa AES/Rijndael', normal: false, amber: true },
+  { feature: 'Tích hợp Base.vn', normal: false, amber: true }
 ];

@@ -53,7 +53,7 @@ export default function SpecsSection() {
               >
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-xs font-mono text-gray-400 font-bold uppercase tracking-wider">
+                    <span className="text-xs font-roboto text-gray-400 font-bold uppercase tracking-wider">
                       {spec.label}
                     </span>
                     <div className="w-9 h-9 rounded-xl bg-white border border-gray-100 flex items-center justify-center text-blue-600 shadow-sm">

@@ -44,7 +44,7 @@ export default function Header({ onPreOrderClick, onContactClick }: HeaderProps)
             onClick={() => scrollToSection('difference-section')}
             className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
-            Tính năng
+            Tính Năng
           </button>
           <button
             onClick={() => scrollToSection('flow-section')}
@@ -62,7 +62,7 @@ export default function Header({ onPreOrderClick, onContactClick }: HeaderProps)
             onClick={() => scrollToSection('demo-playground')}
             className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
-            Trải nghiệm AI
+            Trài Nghiệm AI
           </button>
           <button
             onClick={() => scrollToSection('specs-section')}

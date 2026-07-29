@@ -245,7 +245,7 @@ export default function App() {
                 }}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gray-100 text-gray-900 text-xs font-semibold hover:bg-gray-200 transition-all gap-1 active:scale-98"
               >
-                Trải nghiệm AI
+                Trài Nghiệm AI
                 <ChevronRight className="w-4 h-4" />
               </button>
               

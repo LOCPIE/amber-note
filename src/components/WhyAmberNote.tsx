@@ -50,7 +50,7 @@ export default function WhyAmberNote() {
             transition={{ delay: 0.2 }}
             className="text-sm text-gray-500 max-w-xl mx-auto mt-4"
           >
-            Amber Note loại bỏ hoàn toàn các bước xuất file ghi âm, gõ tay biên bản hay cập nhật CRM thủ công. Toàn bộ hội thoại biến thành hành động sau một cú bấm.
+            Không còn xuất file. Không còn gõ biên bản. Không còn cập nhật CRM thủ công. Chỉ một chạm để biến cuộc họp thành hành động.
           </motion.p>
         </div>
 

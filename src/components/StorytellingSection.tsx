@@ -76,12 +76,12 @@ const STEPS: TimelineStep[] = [
   },
   {
     id: 7,
-    label: 'Assign Workflow',
+    label: 'Assign Wework',
     subLabel: 'Giao việc tự động',
-    desc: 'Tự động gán người thực hiện, thiết lập hạn chót (deadline) và đẩy đầu việc trực tiếp vào Base Workflow.',
+    desc: 'Tự động gán người thực hiện, thiết lập hạn chót (deadline) và đẩy đầu việc trực tiếp vào Base Wework.',
     icon: UserPlus,
     color: 'from-sky-500 to-blue-600',
-    baseApp: 'Base Workflow'
+    baseApp: 'Base Wework'
   },
   {
     id: 8,
@@ -332,7 +332,7 @@ export default function StorytellingSection() {
                     {activeStep === 7 && (
                       <div className="space-y-1.5">
                         <div className="flex items-center gap-1.5 text-sky-600 font-bold">
-                          <span>Base Workflow • Quản lý công việc</span>
+                          <span>Base Wework • Quản lý công việc</span>
                         </div>
                         <div className="flex justify-between text-[11px] text-gray-500 bg-white p-2 rounded border border-gray-100">
                           <span>⚡ Giao việc: Lê Minh (Sales)</span>

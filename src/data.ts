@@ -27,14 +27,14 @@ export const DEMO_PRESETS: DemoPreset[] = [
         assignee: 'Đức Anh (Kỹ thuật)',
         deadline: '18/07/2026',
         status: 'In Progress',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       },
       {
         title: 'Soạn thảo tài liệu bàn giao giai đoạn 1 & Phác thảo HĐ Giai đoạn 2',
         assignee: 'Minh Thảo (Account)',
         deadline: '20/07/2026',
         status: 'Pending',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       },
       {
         title: 'Xác nhận tiến độ vận hành kho bãi giai đoạn 1 với khách hàng',
@@ -71,14 +71,14 @@ export const DEMO_PRESETS: DemoPreset[] = [
         assignee: 'Hoàng Lâm (Kỹ thuật)',
         deadline: '16/07/2026',
         status: 'In Progress',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       },
       {
         title: 'Gửi tài liệu hướng dẫn sử dụng phân quyền & Gọi hỗ trợ',
         assignee: 'Thanh Vân (Customer Support)',
         deadline: '17/07/2026',
         status: 'Pending',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       }
     ]
   },
@@ -108,7 +108,7 @@ export const DEMO_PRESETS: DemoPreset[] = [
         assignee: 'Bác sĩ Hoài Nam',
         deadline: '16/07/2026',
         status: 'Completed',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       },
       {
         title: 'Gửi báo giá gói bảo hiểm Care Pro & Hướng dẫn bảo lãnh viện phí',
@@ -151,14 +151,14 @@ export const DEMO_PRESETS: DemoPreset[] = [
         assignee: 'Hà Phùng (CMO)',
         deadline: '17/07/2026',
         status: 'In Progress',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       },
       {
         title: 'Thực hiện nâng cấp tải hạ tầng & Load test server',
         assignee: 'Hardy (CTO)',
         deadline: '19/07/2026',
         status: 'In Progress',
-        baseApp: 'Base Workflow'
+        baseApp: 'Base Wework'
       }
     ]
   }
@@ -177,7 +177,7 @@ export const WHY_CARDS: WhyCard[] = [
   },
   {
     title: 'Giao việc tự động',
-    description: 'Dưới sự phê duyệt của bạn, AI tự động tạo task trên Base Workflow, gán đúng người, đặt deadline chính xác theo đúng thảo luận trong phòng họp.',
+    description: 'Dưới sự phê duyệt của bạn, AI tự động tạo task trên Base Wework, gán đúng người, đặt deadline chính xác theo đúng thảo luận trong phòng họp.',
     iconName: 'ClipboardCheck'
   },
   {
@@ -201,8 +201,8 @@ export const SPEC_ITEMS: SpecItem[] = [
   {
     iconName: 'Mic',
     label: 'AI Recording System',
-    value: 'Dual High-Fidelity Mic',
-    desc: 'Mảng micro kép độ nhạy cao, thu âm khoảng cách xa lên đến 8 mét rõ nét.'
+    value: '4 micro AI',
+    desc: 'Mảng 4 micro AI độ nhạy cao, thu âm khoảng cách xa lên đến 8 mét rõ nét.'
   },
   {
     iconName: 'Activity',
@@ -213,13 +213,13 @@ export const SPEC_ITEMS: SpecItem[] = [
   {
     iconName: 'Battery',
     label: 'Battery Life',
-    value: '24 Hours Continuous',
+    value: '24 giờ liên tục',
     desc: 'Thời lượng pin hoạt động liên tục vượt trội, sạc nhanh USB-C tiện lợi.'
   },
   {
     iconName: 'Shield',
     label: 'Enterprise Ready',
-    value: 'AES-256 Cloud Encryption',
+    value: 'Thuật toán AES/Rijndael',
     desc: 'Mã hóa dữ liệu từ phần cứng lên đám mây, an toàn tuyệt đối.'
   },
   {
@@ -243,6 +243,6 @@ export const COMPARE_DATA = [
   { feature: 'CRM Sync (Tự cập nhật cơ hội bán hàng)', normal: false, amber: true },
   { feature: 'Meeting Sync (Đồng bộ lịch & biên bản)', normal: false, amber: true },
   { feature: 'Auto Task (Tự bóc tách & giao việc)', normal: false, amber: true },
-  { feature: 'Base Workflow integration (Tích hợp luồng công việc)', normal: false, amber: true },
+  { feature: 'Base Wework integration (Tích hợp luồng công việc)', normal: false, amber: true },
   { feature: 'Corporate Knowledge (Kho lưu trữ tri thức)', normal: false, amber: true }
 ];

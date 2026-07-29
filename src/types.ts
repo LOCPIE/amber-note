@@ -20,7 +20,7 @@ export interface DemoPreset {
     assignee: string;
     deadline: string;
     status: string;
-    baseApp: 'Base Workflow' | 'Base Meeting' | 'Base CRM';
+    baseApp: 'Base Wework' | 'Base Meeting' | 'Base CRM';
   }[];
   crmSync?: {
     dealName: string;

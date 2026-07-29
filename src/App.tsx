@@ -275,7 +275,7 @@ export default function App() {
               </div>
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-gray-400 shrink-0" />
-                <span className="text-[10px] font-mono text-gray-500 uppercase tracking-wider font-bold">AES-256 BẢO MẬT</span>
+                <span className="text-[10px] font-mono text-gray-500 uppercase tracking-wider font-bold">BẢO MẬT AES/Rijndael</span>
               </div>
             </motion.div>
           </div>

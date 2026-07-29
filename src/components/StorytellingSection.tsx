@@ -132,7 +132,7 @@ export default function StorytellingSection() {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl font-display font-medium tracking-tight text-gray-900"
           >
-            Amber Note vận hành toàn bộ hành trình AI
+            Biến mọi cuộc họp thành một quy trình AI liền mạch.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

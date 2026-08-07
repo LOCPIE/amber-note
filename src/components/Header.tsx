@@ -53,16 +53,16 @@ export default function Header({ onPreOrderClick, onContactClick }: HeaderProps)
             Luồng Hoạt Động
           </button>
           <button
+            onClick={() => scrollToSection('demo-playground')}
+            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
+          >
+            Trải Nghiệm AI
+          </button>
+          <button
             onClick={() => scrollToSection('compare-section')}
             className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
           >
             So Sánh
-          </button>
-          <button
-            onClick={() => scrollToSection('demo-playground')}
-            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
-          >
-            Trài Nghiệm AI
           </button>
           <button
             onClick={() => scrollToSection('specs-section')}

@@ -24,6 +24,7 @@ import DemoPlayground from './components/DemoPlayground';
 import SpecsSection from './components/SpecsSection';
 import TrustedEnterprises from './components/TrustedEnterprises';
 import Footer from './components/Footer';
+import AiChatBox from './components/AiChatBox';
 import { ProductColor } from './types';
 
 // Fetch our beautifully generated images as URLs
@@ -798,6 +799,12 @@ export default function App() {
 
       {/* Elegant Footer with Dual Logos */}
       <Footer />
+
+      {/* Floating AI Chat Box Widget */}
+      <AiChatBox 
+        onOpenPreOrder={() => setPreOrderOpen(true)} 
+        onOpenConsultation={() => setConsultationOpen(true)} 
+      />
 
     </div>
   );

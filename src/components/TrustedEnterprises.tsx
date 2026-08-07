@@ -25,18 +25,18 @@ const TESTIMONIALS: Testimony[] = [
   {
     id: 2,
     quote: "Khả năng phân tách giọng nói (Diarization) của thiết bị hoạt động xuất sắc kể cả trong môi trường ồn. Biên bản họp được lập tự động giúp chúng tôi giảm họp rác và tăng tốc độ ra quyết định lên gấp đôi.",
-    author: "Anh Phạm Anh Tuấn",
-    position: "CTO",
-    company: "Base.vn Enterprise Partner",
+    author: "Anh Lê Hữu Khôi",
+    position: "Chuyên gia tư vấn AI",
+    company: "",
     stats: "2.4x",
     statsLabel: "Tốc độ xử lý hành động sau họp"
   },
   {
     id: 3,
-    quote: "Bảo mật thông tin là ưu tiên tối cao của chúng tôi đối với các cuộc họp chiến lược quốc tế. Amber Note đáp ứng xuất sắc các tiêu chuẩn mã hóa AES-256 phần cứng và vận hành hoàn toàn trong phân vùng Base Cloud khép kín.",
-    author: "Chị Lê Hoàng Nam",
-    position: "COO",
-    company: "VinGroup Technology Lab",
+    quote: "Bảo mật thông tin là ưu tiên tối cao của chúng tôi đối với các cuộc họp chiến lược quốc tế. Amber Note đáp ứng xuất sắc các tiêu chuẩn mã hóa AES-256 phần cứng và vận hành hoàn toàn trong hệ thống cloud khép kín.",
+    author: "Anh Nguyễn Quyết Định",
+    position: "Manager",
+    company: "Base AI Innovation Lab",
     stats: "100%",
     statsLabel: "Mã hóa bảo mật tuyệt đối"
   }
@@ -154,7 +154,7 @@ export default function TrustedEnterprises() {
                   <div>
                     <h4 className="text-sm font-bold text-gray-900">{activeTestimony.author}</h4>
                     <p className="text-xs text-gray-400 font-mono">
-                      {activeTestimony.position} • {activeTestimony.company}
+                      {activeTestimony.company ? `${activeTestimony.position} • ${activeTestimony.company}` : activeTestimony.position}
                     </p>
                   </div>
                 </motion.div>

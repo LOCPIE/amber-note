@@ -240,7 +240,7 @@ export type CompareStatus = 'check' | 'cross' | 'warning';
 
 export const COMPARE_DATA: { feature: string; phone: CompareStatus; normal: CompareStatus; amber: CompareStatus }[] = [
   { feature: 'Ghi âm', phone: 'check', normal: 'check', amber: 'check' },
-  { feature: 'Chất lượng thu âm chuyên dụng', phone: 'cross', normal: 'check', amber: 'check' },
+  { feature: 'Chất lượng thu âm chuyên dụng', phone: 'cross', normal: 'cross', amber: 'check' },
   { feature: 'Thu âm nhiều người trong phòng họp', phone: 'warning', normal: 'check', amber: 'check' },
   { feature: 'AI Transcript', phone: 'check', normal: 'cross', amber: 'check' },
   { feature: 'AI Summary', phone: 'check', normal: 'cross', amber: 'check' },

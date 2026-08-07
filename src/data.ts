@@ -236,15 +236,20 @@ export const SPEC_ITEMS: SpecItem[] = [
   }
 ];
 
-export const COMPARE_DATA = [
-  { feature: 'Ghi âm', normal: true, amber: true },
-  { feature: 'AI Transcript', normal: false, amber: true },
-  { feature: 'AI Summary', normal: false, amber: true },
-  { feature: 'AI nhận diện công việc', normal: false, amber: true },
-  { feature: 'Tự động giao việc', normal: false, amber: true },
-  { feature: 'Đồng bộ Meeting', normal: false, amber: true },
-  { feature: 'Đồng bộ CRM/Deal', normal: false, amber: true },
-  { feature: 'AI chạy trực tiếp trên thiết bị', normal: false, amber: true },
-  { feature: 'Mã hóa AES/Rijndael', normal: false, amber: true },
-  { feature: 'Tích hợp Base.vn', normal: false, amber: true }
+export type CompareStatus = 'check' | 'cross' | 'warning';
+
+export const COMPARE_DATA: { feature: string; phone: CompareStatus; normal: CompareStatus; amber: CompareStatus }[] = [
+  { feature: 'Ghi âm', phone: 'check', normal: 'check', amber: 'check' },
+  { feature: 'Chất lượng thu âm chuyên dụng', phone: 'cross', normal: 'check', amber: 'check' },
+  { feature: 'Thu âm nhiều người trong phòng họp', phone: 'warning', normal: 'check', amber: 'check' },
+  { feature: 'AI Transcript', phone: 'check', normal: 'cross', amber: 'check' },
+  { feature: 'AI Summary', phone: 'check', normal: 'cross', amber: 'check' },
+  { feature: 'AI nhận diện công việc', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'Tự động giao việc', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'Đồng bộ Meeting', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'Đồng bộ CRM/Deal', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'Đồng bộ Workflow', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'AI chạy trực tiếp trên thiết bị', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'Mã hóa AES/Rijndael', phone: 'cross', normal: 'cross', amber: 'check' },
+  { feature: 'Tích hợp Base.vn', phone: 'cross', normal: 'cross', amber: 'check' }
 ];

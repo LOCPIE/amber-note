@@ -1,11 +1,33 @@
 import { motion } from 'motion/react';
-import { Check, X, ShieldAlert, Sparkles } from 'lucide-react';
-import { COMPARE_DATA } from '../data';
+import { Check, X, ShieldAlert, Sparkles, AlertTriangle } from 'lucide-react';
+import { COMPARE_DATA, CompareStatus } from '../data';
 
 export default function CompareSection() {
+  const renderStatus = (status: CompareStatus) => {
+    if (status === 'check') {
+      return (
+        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white shadow-sm shadow-blue-500/20">
+          <Check className="w-3 h-3 stroke-[3px]" />
+        </div>
+      );
+    }
+    if (status === 'warning') {
+      return (
+        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-50 text-amber-600" title="Hạn chế">
+          <AlertTriangle className="w-3 h-3 stroke-[2.5px]" />
+        </div>
+      );
+    }
+    return (
+      <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-50 text-red-400">
+        <X className="w-3 h-3 stroke-[3px]" />
+      </div>
+    );
+  };
+
   return (
     <section className="py-24 bg-gray-50" id="compare-section">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         
         {/* Title Block */}
         <div className="text-center mb-16">
@@ -30,14 +52,17 @@ export default function CompareSection() {
           className="bg-white rounded-3xl border border-gray-200/80 overflow-hidden shadow-xl shadow-gray-100/50"
         >
           <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
+            <table className="w-full text-left border-collapse min-w-[640px]">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <th className="px-5 py-3.5 text-xs font-sans font-bold uppercase text-gray-400 tracking-wider">
-                    Tính năng
+                    Tính Năng
                   </th>
-                  <th className="px-5 py-3.5 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
-                    Máy ghi âm thường
+                  <th className="px-4 py-3.5 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
+                    Điện Thoại Ghi Âm
+                  </th>
+                  <th className="px-4 py-3.5 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
+                    Máy Ghi Âm Thường
                   </th>
                   <th className="px-5 py-3.5 text-center text-xs font-sans font-bold uppercase text-blue-600 tracking-wider bg-blue-50/40 relative">
                     <div className="flex items-center justify-center gap-1">
@@ -55,26 +80,19 @@ export default function CompareSection() {
                       {row.feature}
                     </td>
 
+                    {/* Smartphone Recorder Value */}
+                    <td className="px-4 py-2.5 text-center">
+                      {renderStatus(row.phone)}
+                    </td>
+
                     {/* Normal Recorder Value */}
-                    <td className="px-5 py-2.5 text-center">
-                      {row.normal ? (
-                        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-50 text-emerald-600">
-                          <Check className="w-3 h-3 stroke-[3px]" />
-                        </div>
-                      ) : (
-                        <span className="text-gray-300 font-bold text-sm leading-none">—</span>
-                      )}
+                    <td className="px-4 py-2.5 text-center">
+                      {renderStatus(row.normal)}
                     </td>
 
                     {/* Amber Note Value */}
                     <td className="px-5 py-2.5 text-center bg-blue-50/10 relative">
-                      {row.amber ? (
-                        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white shadow-sm shadow-blue-500/20">
-                          <Check className="w-3 h-3 stroke-[3px]" />
-                        </div>
-                      ) : (
-                        <span className="text-gray-300 font-bold text-sm leading-none">—</span>
-                      )}
+                      {renderStatus(row.amber)}
                     </td>
                   </tr>
                 ))}

@@ -84,7 +84,7 @@ export default function Header({ onPreOrderClick, onContactClick }: HeaderProps)
           </a>
           <button
             onClick={onPreOrderClick}
-            className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black text-white text-[13px] font-medium hover:bg-neutral-800 active:scale-98 shadow-sm transition-all gap-1.5"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-blue-600 text-white text-[13px] font-medium hover:bg-blue-700 active:scale-98 shadow-md shadow-blue-600/20 transition-all gap-1.5"
           >
             Đặt trước
             <ArrowRight className="w-3.5 h-3.5" />

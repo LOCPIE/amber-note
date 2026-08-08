@@ -180,8 +180,28 @@ export default function AiChatBox({
         {!isOpen && (
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+              rotate: [0, -5, 5, -4, 4, -2, 2, 0],
+              y: [0, -4, 0, -2, 0]
+            }}
+            transition={{
+              scale: { duration: 0.3 },
+              opacity: { duration: 0.3 },
+              rotate: {
+                duration: 1.2,
+                repeat: Infinity,
+                repeatDelay: 3,
+                ease: 'easeInOut'
+              },
+              y: {
+                duration: 1.2,
+                repeat: Infinity,
+                repeatDelay: 3,
+                ease: 'easeInOut'
+              }
+            }}
             className="relative"
           >
             {hasUnread && (

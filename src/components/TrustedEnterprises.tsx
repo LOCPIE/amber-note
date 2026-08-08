@@ -79,49 +79,6 @@ export default function TrustedEnterprises() {
   return (
     <section className="py-20 bg-gray-50/50" id="trusted-enterprises">
       <div className="max-w-7xl mx-auto px-6">
-        
-        {/* Logos Bar Section */}
-        <div className="text-center space-y-4 mb-16">
-          <p className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-gray-400">
-            Trusted by Vietnam's Leading Enterprises
-          </p>
-          
-          {/* Symmetrical High-contrast Grid of Vector logos */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center opacity-75 grayscale hover:grayscale-0 transition-all duration-500 pt-4">
-            
-            {/* Logo 1: Phat Dat Group */}
-            <div className="flex items-center gap-2 font-display font-bold text-gray-800 text-sm tracking-tight select-none">
-              <div className="w-6 h-6 rounded bg-black flex items-center justify-center text-white text-xs">P</div>
-              <span>PHAT DAT GROUP</span>
-            </div>
-
-            {/* Logo 2: VinGroup Tech */}
-            <div className="flex items-center gap-1.5 font-display font-medium text-gray-800 text-sm tracking-wider select-none">
-              <span className="text-blue-600 font-extrabold">V</span>
-              <span>VINGROUP TECH</span>
-            </div>
-
-            {/* Logo 3: Base Enterprise */}
-            <div className="flex items-center gap-2 font-display font-bold text-gray-800 text-sm select-none">
-              <div className="w-5 h-5 rounded-full border-2 border-black flex items-center justify-center text-[10px] font-mono">B</div>
-              <span>BASE PARTNER</span>
-            </div>
-
-            {/* Logo 4: FPT Software */}
-            <div className="flex items-center gap-1 font-mono font-bold text-gray-800 text-sm select-none">
-              <span className="text-orange-500">//</span>
-              <span>FPT SOFTWARE</span>
-            </div>
-
-            {/* Logo 5: Bamboo Air */}
-            <div className="flex items-center gap-1.5 font-display font-light text-gray-800 text-xs tracking-[0.15em] select-none">
-              <span className="font-bold text-teal-600">▲</span>
-              <span>BAMBOO AIR</span>
-            </div>
-
-          </div>
-        </div>
-
         {/* Customer Quotes & Success Stories Showcase */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white border border-gray-200/60 rounded-[32px] p-8 sm:p-12 shadow-xl shadow-gray-100/30 relative overflow-hidden">
           

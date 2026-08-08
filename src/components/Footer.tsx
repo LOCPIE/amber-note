@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
             
             <p className="text-xs sm:text-sm text-gray-500 max-w-sm leading-relaxed">
-              Thiết bị AI Recording đầu tiên được tích hợp đồng bộ trực tiếp vào hệ sinh thái quản lý doanh nghiệp Base.vn. Record một lần, hành động chạy vĩnh viễn.
+              Thiết bị AI Recording đầu tiên được tích hợp đồng bộ trực tiếp vào hệ sinh thái quản lý doanh nghiệp Base.vn.
             </p>
           </div>
 
@@ -40,10 +40,10 @@ export default function Footer() {
             <div className="space-y-3">
               <h4 className="text-[10px] font-mono text-gray-400 uppercase font-bold tracking-wider">Hệ sinh thái</h4>
               <ul className="space-y-2 text-xs text-gray-600">
-                <li><a href="https://base.vn" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Base.vn Platform</a></li>
-                <li><a href="https://base.vn/wework" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Base Wework</a></li>
+                <li><a href="https://base.vn" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">AI Platform</a></li>
+                <li><a href="https://base.vn" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Base Work+</a></li>
+                <li><a href="https://base.vn" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Base HRM+</a></li>
                 <li><a href="https://base.vn/crm" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Base CRM</a></li>
-                <li><a href="https://base.vn/meeting" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Base Meeting</a></li>
               </ul>
             </div>
 

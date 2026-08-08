@@ -69,6 +69,14 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Auto-switch product color images in Hero Section
+  useEffect(() => {
+    const colorInterval = setInterval(() => {
+      setActiveColor(prev => (prev === 'space-gray' ? 'blossom-pink' : 'space-gray'));
+    }, 3500);
+    return () => clearInterval(colorInterval);
+  }, []);
+
   const handlePreOrderSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitted(true);

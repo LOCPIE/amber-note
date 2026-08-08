@@ -385,7 +385,7 @@ export default function App() {
                 Đừng để cuộc họp kết thúc... mà không có hành động.
               </h2>
               <p className="text-sm sm:text-base text-gray-500 leading-relaxed">
-                Amber Note biến mọi lời bàn thảo thành các công việc cụ thể được phân công, gán người thực hiện và giám sát tự động trên Base.vn. Đặt trước ngay hôm nay để nhận ưu đãi lên đến 20% cho doanh nghiệp của bạn.
+                Amber Note biến mọi cuộc trò chuyện thành công việc cụ thể, tự động phân công, giao việc và theo dõi tiến độ trên Base.vn.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-2">

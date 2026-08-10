@@ -279,7 +279,7 @@ export default function StorytellingSection() {
                   <div className="mt-6 bg-gray-50 rounded-xl p-4 border border-gray-100 font-mono text-xs text-gray-600 shadow-inner">
                     {activeStep === 1 && (
                       <div className="space-y-1.5">
-                        <div className="flex items-center gap-1.5 text-blue-600 font-bold">
+                        <div className="flex items-center gap-1.5 text-blue-600 font-bold font-roboto">
                           <Users className="w-3.5 h-3.5" /> <span>Base Meeting • Lịch biểu trực tuyến</span>
                         </div>
                         <p className="text-[11px] text-gray-500">Tiêu đề: Họp Tổng Kết Quý II - Kinh Doanh miền Nam</p>
@@ -290,20 +290,20 @@ export default function StorytellingSection() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <div className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                          <span className="font-bold text-red-500">AMBER CAPTURING...</span>
+                          <span className="font-bold text-red-500 font-roboto">AMBER CAPTURING...</span>
                         </div>
                         <span className="text-[10px] text-gray-400">Nén 256kbps lossless</span>
                       </div>
                     )}
                     {activeStep === 3 && (
                       <div className="space-y-1 select-none">
-                        <div className="text-[11px] font-bold text-emerald-600">[0:25] CEO Phát Đạt:</div>
+                        <div className="text-[11px] font-bold text-emerald-600 font-roboto">[0:25] CEO Phát Đạt:</div>
                         <p className="text-[11px] italic bg-emerald-50/50 p-1 rounded">"...Anh muốn đặt cọc trước 30 máy Amber Note bản Space Gray để triển khai..."</p>
                       </div>
                     )}
                     {activeStep === 4 && (
                       <div className="space-y-1">
-                        <div className="text-[11px] font-bold text-purple-600">💡 Tóm tắt AI (Summary Key):</div>
+                        <div className="text-[11px] font-bold text-purple-600 font-roboto">💡 Tóm tắt AI (Summary Key):</div>
                         <ul className="list-disc pl-4 text-[10px] text-gray-500 space-y-0.5">
                           <li>Khách hàng Phát Đạt chốt mua 30 máy Space Gray.</li>
                           <li>Sales Minh làm hợp đồng gửi sáng 09/07.</li>
@@ -312,7 +312,7 @@ export default function StorytellingSection() {
                     )}
                     {activeStep === 5 && (
                       <div className="space-y-1.5">
-                        <div className="flex items-center justify-between text-rose-600 font-bold">
+                        <div className="flex items-center justify-between text-rose-600 font-bold font-roboto">
                           <span>Base CRM • Cơ hội vàng</span>
                           <span className="px-1.5 py-0.5 rounded bg-rose-50 text-[9px]">Tự Động</span>
                         </div>
@@ -322,7 +322,7 @@ export default function StorytellingSection() {
                     )}
                     {activeStep === 6 && (
                       <div className="space-y-1">
-                        <span className="text-[10px] font-bold text-violet-600 uppercase">AI Detected Action Items:</span>
+                        <span className="text-[10px] font-bold text-violet-600 uppercase font-roboto">AI Detected Action Items:</span>
                         <div className="bg-white px-2 py-1.5 rounded border border-gray-100 flex items-center justify-between">
                           <span className="text-[10px]">☐ Soạn hợp đồng 30 máy Amber Note</span>
                           <span className="text-[9px] text-gray-400">@Lê Minh</span>
@@ -331,7 +331,7 @@ export default function StorytellingSection() {
                     )}
                     {activeStep === 7 && (
                       <div className="space-y-1.5">
-                        <div className="flex items-center gap-1.5 text-sky-600 font-bold">
+                        <div className="flex items-center gap-1.5 text-sky-600 font-bold font-roboto">
                           <span>Base Wework • Quản lý công việc</span>
                         </div>
                         <div className="flex justify-between text-[11px] text-gray-500 bg-white p-2 rounded border border-gray-100">
@@ -341,7 +341,7 @@ export default function StorytellingSection() {
                       </div>
                     )}
                     {activeStep === 8 && (
-                      <div className="flex items-center gap-2 text-green-600 font-bold">
+                      <div className="flex items-center gap-2 text-green-600 font-bold font-roboto">
                         <CheckCircle className="w-4 h-4" />
                         <span>QUY TRÌNH HOÀN TẤT • TIẾT KIỆM 80% THỜI GIAN NHẬP LIỆU</span>
                       </div>

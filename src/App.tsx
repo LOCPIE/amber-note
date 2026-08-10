@@ -193,11 +193,11 @@ export default function App() {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-24 sm:pt-32 min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-b from-gray-50 to-white" id="hero-section">
+      <section className="relative pt-16 sm:pt-20 min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-b from-gray-50 to-white" id="hero-section">
         {/* Abstract lights background */}
         <div className="absolute top-0 right-0 w-[40%] h-[70%] bg-blue-500/5 rounded-full filter blur-[120px] pointer-events-none" />
         
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 items-center w-full relative py-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 items-center w-full relative py-8 sm:py-12">
           
           {/* Left Text Block */}
           <div className="lg:col-span-6 space-y-6 sm:space-y-8 text-left z-10">

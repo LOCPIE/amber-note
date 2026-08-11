@@ -237,7 +237,7 @@ export default function App() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-sm sm:text-base text-gray-500 leading-relaxed max-w-xl"
             >
-              Amber Note giúp doanh nghiệp ghi nhận mọi cuộc họp, cuộc gọi và trao đổi quan trọng, biến chúng thành dữ liệu nghiệp vụ có cấu trúc và tự động tạo hành động trực tiếp trên hệ sinh thái của Base.
+              Không bỏ lỡ một cuộc trò chuyện nào. Amber Note ghi lại trọn vẹn mọi cuộc họp và mọi cuộc điện thoại công việc - cả khi không bật loa ngoài - tạo thành dữ liệu có cấu trúc và gợi ý hành động cụ thể ngay trên hệ sinh thái Base. Dành cho cả cá nhân và doanh nghiệp.
             </motion.p>
 
             {/* CTAs */}
@@ -269,22 +269,36 @@ export default function App() {
 
             {/* Enterprise Quick features ticker */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-100"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-2.5 pt-6 border-t border-gray-100"
             >
-              <div className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-gray-400 shrink-0" />
-                <span className="text-[10px] font-mono text-gray-500 uppercase tracking-wider font-bold">24H PIN LIÊN TỤC</span>
+              <div className="flex items-center gap-2 p-2.5 sm:px-2 sm:py-2.5 xl:p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer">
+                <div className="w-7 h-7 sm:w-7 sm:h-7 xl:w-8 xl:h-8 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
+                  <Clock className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="text-[10px] sm:text-[10px] md:text-[11px] lg:text-xs font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-wide font-bold transition-colors whitespace-nowrap">
+                  24H PIN LIÊN TỤC
+                </span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle className="w-4 h-4 text-gray-400 shrink-0" />
-                <span className="text-[10px] font-mono text-gray-500 uppercase tracking-wider font-bold">TỰ ĐỘNG GIAO VIỆC</span>
+
+              <div className="flex items-center gap-2 p-2.5 sm:px-2 sm:py-2.5 xl:p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer">
+                <div className="w-7 h-7 sm:w-7 sm:h-7 xl:w-8 xl:h-8 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
+                  <CheckCircle className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="text-[10px] sm:text-[10px] md:text-[11px] lg:text-xs font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-wide font-bold transition-colors whitespace-nowrap">
+                  TỰ ĐỘNG GIAO VIỆC
+                </span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-gray-400 shrink-0" />
-                <span className="text-[10px] font-mono text-gray-500 uppercase tracking-wider font-bold">BẢO MẬT AES/Rijndael</span>
+
+              <div className="flex items-center gap-2 p-2.5 sm:px-2 sm:py-2.5 xl:p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer">
+                <div className="w-7 h-7 sm:w-7 sm:h-7 xl:w-8 xl:h-8 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
+                  <ShieldCheck className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="text-[10px] sm:text-[10px] md:text-[11px] lg:text-xs font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-wide font-bold transition-colors whitespace-nowrap">
+                  BẢO MẬT AES/Rijndael
+                </span>
               </div>
             </motion.div>
           </div>

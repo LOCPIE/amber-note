@@ -73,7 +73,7 @@ export default function FlowVisualization() {
             Hệ sinh thái thông minh
           </h2>
           <p className="text-sm sm:text-base text-gray-400 max-w-xl mx-auto mt-4">
-            Từ cốt lõi Amber Note, các dòng dữ liệu được phân tích bằng AI và chuyển giao tức thì đến mọi ứng dụng cốt lõi của doanh nghiệp.
+            Mọi dữ liệu từ Amber Note được AI phân tích và chuyển giao ngay lập tức đến các ứng dụng vận hành cốt lõi của doanh nghiệp.
           </p>
         </div>
 

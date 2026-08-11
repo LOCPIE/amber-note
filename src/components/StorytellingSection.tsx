@@ -27,7 +27,7 @@ interface TimelineStep {
 const STEPS: TimelineStep[] = [
   {
     id: 1,
-    label: 'Meeting',
+    label: 'Meeting/Call',
     subLabel: 'Khởi đầu buổi họp',
     desc: 'Doanh nghiệp bắt đầu buổi họp, trao đổi ý tưởng và phân công công việc trực tiếp trong phòng họp hoặc trực tuyến.',
     icon: Users,
@@ -123,7 +123,7 @@ export default function StorytellingSection() {
             viewport={{ once: true }}
             className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-blue-600 mb-3"
           >
-            Từ cuộc họp... đến hành động
+            Từ giao tiếp... đến hành động
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

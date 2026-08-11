@@ -34,7 +34,7 @@ export default function SpecsSection() {
             Thiết kế tối giản. Sức mạnh tối đa.
           </h2>
           <p className="text-sm text-gray-500 mt-3 max-w-lg mx-auto">
-            Mọi chi tiết đều được tinh chỉnh để tối ưu khả năng ghi âm, xử lý AI và hiệu suất sử dụng.
+            Mọi chi tiết đều được tinh chỉnh để tối ưu khả năng ghi âm, xử lý AI và<br />hiệu suất sử dụng.
           </p>
         </div>
 

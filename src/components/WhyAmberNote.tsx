@@ -50,7 +50,7 @@ export default function WhyAmberNote() {
             transition={{ delay: 0.2 }}
             className="text-sm text-gray-500 max-w-xl mx-auto mt-4"
           >
-            Không còn xuất file. Không còn gõ biên bản. Không còn cập nhật CRM thủ công. Chỉ một chạm để biến cuộc họp thành hành động.
+            Được trang bị ngữ cảnh doanh nghiệp của chính bạn, Amber hiểu đúng người, đúng việc trong mỗi cuộc họp. Không xuất file, không gõ biên bản, không cập nhật CRM thủ công. Chỉ một chạm để biến cuộc họp thành hành động.
           </motion.p>
         </div>
 

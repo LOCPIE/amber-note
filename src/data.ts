@@ -238,18 +238,18 @@ export const SPEC_ITEMS: SpecItem[] = [
 
 export type CompareStatus = 'check' | 'cross' | 'warning';
 
-export const COMPARE_DATA: { feature: string; phone: CompareStatus; normal: CompareStatus; amber: CompareStatus }[] = [
-  { feature: 'Ghi âm', phone: 'check', normal: 'check', amber: 'check' },
-  { feature: 'Chất lượng thu âm chuyên dụng', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Thu âm nhiều người trong phòng họp', phone: 'warning', normal: 'check', amber: 'check' },
-  { feature: 'AI Transcript', phone: 'check', normal: 'cross', amber: 'check' },
-  { feature: 'AI Summary', phone: 'check', normal: 'cross', amber: 'check' },
-  { feature: 'AI nhận diện công việc', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Tự động giao việc', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Đồng bộ Meeting', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Đồng bộ CRM/Deal', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Đồng bộ Workflow', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'AI chạy trực tiếp trên thiết bị', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Mã hóa AES/Rijndael', phone: 'cross', normal: 'cross', amber: 'check' },
-  { feature: 'Tích hợp Base.vn', phone: 'cross', normal: 'cross', amber: 'check' }
+export const COMPARE_DATA: { feature: string; recorder: CompareStatus; aiApp: CompareStatus; amber: CompareStatus }[] = [
+  { feature: 'Ghi âm', recorder: 'check', aiApp: 'cross', amber: 'check' },
+  { feature: 'Chất lượng thu âm chuyên dụng', recorder: 'check', aiApp: 'cross', amber: 'check' },
+  { feature: 'Thu âm nhiều người trong phòng họp', recorder: 'check', aiApp: 'cross', amber: 'check' },
+  { feature: 'AI Transcript', recorder: 'cross', aiApp: 'check', amber: 'check' },
+  { feature: 'AI Summary', recorder: 'cross', aiApp: 'check', amber: 'check' },
+  { feature: 'AI nhận diện công việc', recorder: 'cross', aiApp: 'check', amber: 'check' },
+  { feature: 'Tự động giao việc', recorder: 'cross', aiApp: 'cross', amber: 'check' },
+  { feature: 'Đồng bộ Meeting', recorder: 'cross', aiApp: 'cross', amber: 'check' },
+  { feature: 'Đồng bộ CRM/Deal', recorder: 'cross', aiApp: 'cross', amber: 'check' },
+  { feature: 'Đồng bộ Workflow', recorder: 'cross', aiApp: 'cross', amber: 'check' },
+  { feature: 'AI chạy trực tiếp trên thiết bị', recorder: 'cross', aiApp: 'cross', amber: 'check' },
+  { feature: 'Mã hóa AES/Rijndael', recorder: 'warning', aiApp: 'warning', amber: 'check' },
+  { feature: 'Tích hợp Base.vn', recorder: 'cross', aiApp: 'warning', amber: 'check' }
 ];

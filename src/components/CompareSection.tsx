@@ -56,18 +56,18 @@ export default function CompareSection() {
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <th className="px-5 py-3.5 text-xs font-sans font-bold uppercase text-gray-400 tracking-wider">
-                    Tính Năng
+                    TÍNH NĂNG
                   </th>
                   <th className="px-4 py-3.5 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
-                    Điện Thoại Ghi Âm
+                    THIẾT BỊ GHI ÂM
                   </th>
                   <th className="px-4 py-3.5 text-center text-xs font-sans font-bold uppercase text-gray-500 tracking-wider">
-                    Máy Ghi Âm Thường
+                    AI PHÂN TÍCH CUỘC HỌP
                   </th>
                   <th className="px-5 py-3.5 text-center text-xs font-sans font-bold uppercase text-blue-600 tracking-wider bg-blue-50/40 relative">
                     <div className="flex items-center justify-center gap-1">
                       <Sparkles className="w-3.5 h-3.5 fill-current animate-pulse text-blue-600" />
-                      <span>Amber Note</span>
+                      <span>AMBER NOTE</span>
                     </div>
                   </th>
                 </tr>
@@ -80,14 +80,14 @@ export default function CompareSection() {
                       {row.feature}
                     </td>
 
-                    {/* Smartphone Recorder Value */}
+                    {/* Recording Device Value */}
                     <td className="px-4 py-2.5 text-center">
-                      {renderStatus(row.phone)}
+                      {renderStatus(row.recorder)}
                     </td>
 
-                    {/* Normal Recorder Value */}
+                    {/* AI Meeting Analysis Value */}
                     <td className="px-4 py-2.5 text-center">
-                      {renderStatus(row.normal)}
+                      {renderStatus(row.aiApp)}
                     </td>
 
                     {/* Amber Note Value */}

@@ -272,31 +272,31 @@ export default function App() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-2.5 pt-6 border-t border-gray-100"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-6 border-t border-gray-100"
             >
-              <div className="flex items-center gap-2 p-2.5 sm:px-2 sm:py-2.5 xl:p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer">
-                <div className="w-7 h-7 sm:w-7 sm:h-7 xl:w-8 xl:h-8 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
-                  <Clock className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <div className="flex items-center gap-1.5 p-2 sm:px-1.5 sm:py-2 xl:p-2.5 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer min-w-0">
+                <div className="w-6.5 h-6.5 sm:w-6 sm:h-6 xl:w-7.5 xl:h-7.5 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
+                  <Clock className="w-3.5 h-3.5 sm:w-3.5 sm:h-3.5 xl:w-4 xl:h-4 group-hover:scale-110 transition-transform" />
                 </div>
-                <span className="text-[10px] sm:text-[10px] md:text-[11px] lg:text-xs font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-wide font-bold transition-colors whitespace-nowrap">
+                <span className="text-[10px] sm:text-[9px] md:text-[10px] lg:text-[9.5px] xl:text-[11px] font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-tight font-bold transition-colors whitespace-nowrap overflow-hidden text-ellipsis">
                   24H PIN LIÊN TỤC
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 p-2.5 sm:px-2 sm:py-2.5 xl:p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer">
-                <div className="w-7 h-7 sm:w-7 sm:h-7 xl:w-8 xl:h-8 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
-                  <CheckCircle className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <div className="flex items-center gap-1.5 p-2 sm:px-1.5 sm:py-2 xl:p-2.5 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer min-w-0">
+                <div className="w-6.5 h-6.5 sm:w-6 sm:h-6 xl:w-7.5 xl:h-7.5 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
+                  <CheckCircle className="w-3.5 h-3.5 sm:w-3.5 sm:h-3.5 xl:w-4 xl:h-4 group-hover:scale-110 transition-transform" />
                 </div>
-                <span className="text-[10px] sm:text-[10px] md:text-[11px] lg:text-xs font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-wide font-bold transition-colors whitespace-nowrap">
+                <span className="text-[10px] sm:text-[9px] md:text-[10px] lg:text-[9.5px] xl:text-[11px] font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-tight font-bold transition-colors whitespace-nowrap overflow-hidden text-ellipsis">
                   TỰ ĐỘNG GIAO VIỆC
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 p-2.5 sm:px-2 sm:py-2.5 xl:p-3 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer">
-                <div className="w-7 h-7 sm:w-7 sm:h-7 xl:w-8 xl:h-8 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
-                  <ShieldCheck className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <div className="flex items-center gap-1.5 p-2 sm:px-1.5 sm:py-2 xl:p-2.5 rounded-xl bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100/80 hover:border-blue-200 shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group cursor-pointer min-w-0">
+                <div className="w-6.5 h-6.5 sm:w-6 sm:h-6 xl:w-7.5 xl:h-7.5 rounded-lg bg-white group-hover:bg-blue-600/10 flex items-center justify-center text-gray-400 group-hover:text-blue-600 transition-colors shrink-0">
+                  <ShieldCheck className="w-3.5 h-3.5 sm:w-3.5 sm:h-3.5 xl:w-4 xl:h-4 group-hover:scale-110 transition-transform" />
                 </div>
-                <span className="text-[10px] sm:text-[10px] md:text-[11px] lg:text-xs font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-wide font-bold transition-colors whitespace-nowrap">
+                <span className="text-[10px] sm:text-[8.5px] md:text-[9.5px] lg:text-[9px] xl:text-[10.5px] font-roboto text-gray-600 group-hover:text-blue-950 uppercase tracking-tighter sm:tracking-tighter xl:tracking-tight font-bold transition-colors whitespace-nowrap overflow-hidden text-ellipsis">
                   BẢO MẬT AES/Rijndael
                 </span>
               </div>

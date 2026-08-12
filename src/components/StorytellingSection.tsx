@@ -141,7 +141,7 @@ export default function StorytellingSection() {
             transition={{ delay: 0.2 }}
             className="text-sm text-gray-500 max-w-xl mx-auto mt-4"
           >
-            Một chiếc máy ghi âm không giải quyết được gì nếu bạn phải tự nghe lại và gõ tay. Amber Note kết nối trực tiếp với Base.vn để làm mọi việc thay bạn.
+            Không chỉ ghi âm. Không chỉ tóm tắt. Amber Note biến mọi cuộc họp, cuộc gọi thành dữ liệu và hành động cụ thể, tự động đưa vào hệ thống quản trị.
           </motion.p>
         </div>
 

@@ -104,32 +104,58 @@ export default function FlowVisualization() {
               
               return (
                 <g key={node.id}>
-                  {/* Static thin connection wire line */}
-                  <line
+                  {/* Static or animated connection wire line */}
+                  <motion.line
                     x1="50%"
                     y1="50%"
                     x2={`${x2}%`}
                     y2={`${y2}%`}
-                    stroke={isHovered ? node.color : 'rgba(255, 255, 255, 0.08)'}
-                    strokeWidth={isHovered ? 2 : 1}
-                    className="transition-all duration-300"
+                    animate={
+                      isHovered
+                        ? { stroke: node.color, strokeWidth: 2, opacity: 1 }
+                        : {
+                            stroke: [
+                              'rgba(255, 255, 255, 0.08)',
+                              'rgba(255, 255, 255, 0.08)',
+                              node.color,
+                              node.color,
+                              'rgba(255, 255, 255, 0.08)'
+                            ],
+                            strokeWidth: [1, 1, 2, 1.5, 1],
+                            opacity: [0.3, 0.3, 1, 0.7, 0.3]
+                          }
+                    }
+                    transition={
+                      isHovered
+                        ? { duration: 0.2 }
+                        : {
+                            duration: 3,
+                            repeat: Infinity,
+                            delay: node.delay,
+                            ease: 'easeInOut',
+                            times: [0, 0.5, 0.75, 0.9, 1]
+                          }
+                    }
                   />
                   
                   {/* Laser light pulse animating along the wire */}
                   <motion.circle
-                    r={isHovered ? 4 : 2}
-                    fill={node.color}
                     initial={{ cx: '50%', cy: '50%' }}
                     animate={{
                       cx: ['50%', `${x2}%`],
                       cy: ['50%', `${y2}%`],
-                      opacity: [0, 1, 1, 0]
+                      opacity: [0, 1, 1, 0],
+                      r: isHovered ? [4, 5, 6, 4] : [2, 3, 5, 2]
                     }}
                     transition={{
                       duration: 3,
                       repeat: Infinity,
                       delay: node.delay,
                       ease: 'easeInOut'
+                    }}
+                    fill={node.color}
+                    style={{
+                      filter: `drop-shadow(0 0 6px ${node.color})`
                     }}
                   />
                 </g>
@@ -217,31 +243,122 @@ export default function FlowVisualization() {
                 <motion.div
                   onMouseEnter={() => setHoveredNode(node.id)}
                   onMouseLeave={() => setHoveredNode(null)}
-                  whileHover={{ scale: 1.15, y: -4 }}
-                  className="w-10 sm:w-14 h-10 sm:h-14 rounded-2xl bg-neutral-900 border flex items-center justify-center cursor-pointer transition-colors relative"
-                  style={{
-                    borderColor: isHovered ? node.color : 'rgba(255, 255, 255, 0.1)',
-                    boxShadow: isHovered ? `0 0 20px ${node.color}50` : 'none'
-                  }}
+                  animate={
+                    isHovered
+                      ? {
+                          scale: 1.15,
+                          y: -4,
+                          borderColor: node.color,
+                          backgroundColor: '#171717',
+                          boxShadow: `0 0 25px ${node.color}90`
+                        }
+                      : {
+                          scale: [1, 1, 1.15, 1.08, 1],
+                          borderColor: [
+                            'rgba(255, 255, 255, 0.1)',
+                            'rgba(255, 255, 255, 0.1)',
+                            node.color,
+                            node.color,
+                            'rgba(255, 255, 255, 0.1)'
+                          ],
+                          backgroundColor: [
+                            '#171717',
+                            '#171717',
+                            `${node.color}40`,
+                            `${node.color}20`,
+                            '#171717'
+                          ],
+                          boxShadow: [
+                            '0 0 0px rgba(0,0,0,0)',
+                            '0 0 0px rgba(0,0,0,0)',
+                            `0 0 25px ${node.color}`,
+                            `0 0 12px ${node.color}60`,
+                            '0 0 0px rgba(0,0,0,0)'
+                          ]
+                        }
+                  }
+                  transition={
+                    isHovered
+                      ? { duration: 0.2 }
+                      : {
+                          duration: 3,
+                          repeat: Infinity,
+                          delay: node.delay,
+                          ease: 'easeInOut',
+                          times: [0, 0.65, 0.8, 0.92, 1]
+                        }
+                  }
+                  className="w-10 sm:w-14 h-10 sm:h-14 rounded-2xl border flex items-center justify-center cursor-pointer relative"
                 >
                   {/* Dynamic background light aura */}
                   {isHovered && (
                     <div 
-                      className="absolute inset-0 rounded-2xl opacity-20 filter blur-[10px]" 
+                      className="absolute inset-0 rounded-2xl opacity-30 filter blur-[10px]" 
                       style={{ backgroundColor: node.color }}
                     />
                   )}
-                  <IconComponent className="w-5 sm:w-6 h-5 sm:h-6 transition-colors" style={{ color: isHovered ? node.color : '#A1A1AA' }} />
+                  <motion.div
+                    animate={
+                      isHovered
+                        ? { color: node.color, scale: 1.1 }
+                        : {
+                            color: [
+                              '#A1A1AA',
+                              '#A1A1AA',
+                              node.color,
+                              node.color,
+                              '#A1A1AA'
+                            ],
+                            scale: [1, 1, 1.25, 1.1, 1]
+                          }
+                    }
+                    transition={
+                      isHovered
+                        ? { duration: 0.2 }
+                        : {
+                            duration: 3,
+                            repeat: Infinity,
+                            delay: node.delay,
+                            ease: 'easeInOut',
+                            times: [0, 0.65, 0.8, 0.92, 1]
+                          }
+                    }
+                  >
+                    <IconComponent className="w-5 sm:w-6 h-5 sm:h-6" />
+                  </motion.div>
                 </motion.div>
                 
                 {/* Text Label */}
-                <span 
-                  className={`text-[9px] sm:text-xs font-medium tracking-wide mt-2 text-center transition-colors px-1.5 py-0.5 rounded ${
-                    isHovered ? 'text-white font-bold bg-white/5 border border-white/5' : 'text-gray-400'
-                  }`}
+                <motion.span 
+                  animate={
+                    isHovered
+                      ? { color: node.color, scale: 1.05 }
+                      : {
+                          color: [
+                            '#9CA3AF',
+                            '#9CA3AF',
+                            node.color,
+                            '#FFFFFF',
+                            '#9CA3AF'
+                          ],
+                          scale: [1, 1, 1.1, 1.05, 1]
+                        }
+                  }
+                  transition={
+                    isHovered
+                      ? { duration: 0.2 }
+                      : {
+                          duration: 3,
+                          repeat: Infinity,
+                          delay: node.delay,
+                          ease: 'easeInOut',
+                          times: [0, 0.65, 0.8, 0.92, 1]
+                        }
+                  }
+                  className="text-[9px] sm:text-xs font-semibold tracking-wide mt-2 text-center transition-colors px-1.5 py-0.5 rounded whitespace-nowrap"
                 >
                   {node.label}
-                </span>
+                </motion.span>
               </div>
             );
           })}

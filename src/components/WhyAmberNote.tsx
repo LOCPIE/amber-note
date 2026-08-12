@@ -50,7 +50,7 @@ export default function WhyAmberNote() {
             transition={{ delay: 0.2 }}
             className="text-sm text-gray-500 max-w-xl mx-auto mt-4"
           >
-            Được trang bị ngữ cảnh doanh nghiệp của chính bạn, Amber hiểu đúng người, đúng việc trong mỗi cuộc họp. Không xuất file, không gõ biên bản, không cập nhật CRM thủ công. Chỉ một chạm để biến cuộc họp thành hành động.
+            Amber hiểu đúng ngữ cảnh, đúng người, đúng việc. Một chạm biến cuộc họp thành hành động - mọi thứ tự động, không thao tác thủ công.
           </motion.p>
         </div>
 
